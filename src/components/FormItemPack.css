@@ -1,0 +1,7 @@
+.form-item-pack--ele__inline {
+    margin-bottom: 0;
+    display: inline-block;
+}
+.form-item-pack--ele__hide {
+    display: none;
+}

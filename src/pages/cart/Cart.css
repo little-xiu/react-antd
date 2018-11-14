@@ -1,0 +1,25 @@
+.cart-item {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+}
+.pro-name {
+	padding: 4px 10px;
+	min-width: 150px;
+}
+.cart-item span {
+	padding: 0 10px;
+}
+.pro-delete {
+	background-color: #f30;
+	color: #fff;
+	padding: 3px 6px;
+	border-radius: 4px;
+	margin-left: 10px; 
+}
+.cart-wrap {
+    font-size: 40px;
+    color: #f30;
+    background: #ddd;
+    line-height: 80px;
+}

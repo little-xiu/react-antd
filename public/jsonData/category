@@ -1,0 +1,40 @@
+[
+    {
+        "title": "教育",
+        "sub-item": [
+            {"title": "教材"},
+            {"title": "外语"},
+            {"title": "考试"}
+        ]
+    },
+    {
+        "title": "小说",
+        "sub-item": [
+            {"title": "现代小说"},
+            {"title": "古典小说"}
+        ]
+    },
+    {
+        "title": "文艺",
+        "sub-item": [
+            {"title": "文学"},
+            {"title": "传记"}
+        ]
+    },
+    {
+        "title": "经管",
+        "sub-item": [
+            {"title": "管理"},
+            {"title": "投资理财"},
+            {"title": "经济"}
+        ]
+    },
+    {
+        "title": "人文社科",
+        "sub-item": [
+            {"title": "历史"},
+            {"title": "文化"},
+            {"title": "古籍"}
+        ]
+    }
+]

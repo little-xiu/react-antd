@@ -1,0 +1,21 @@
+.category-title {
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	padding: 0 10px;
+	border-bottom: 1px solid #333;
+	background: #ccc;
+}
+.category-item .category-title:after {
+	content: ">";
+	float: right;
+	font-size: 20px;
+}
+.sub-item {
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	padding: 0 10px;
+	border-bottom: 1px dotted #999;
+	background-color: #eee;
+}

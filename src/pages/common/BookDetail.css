@@ -1,0 +1,27 @@
+.detail-img {
+  width: 150px;
+  margin: 10px auto;
+}
+.detail-img img {
+	width: 100%;
+}
+.detail-bookname {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding-left: 14px;
+}
+.book-details {
+	padding: 15px;
+}
+.buy-btn {
+	display: block;
+  background: #f30;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+  margin: 10px auto;
+  width: 60px;
+  text-align: center;
+}

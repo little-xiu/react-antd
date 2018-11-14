@@ -1,0 +1,24 @@
+.tabs {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 49px;
+	background-color: pink;
+	width: 100%;
+	display: flex;
+}
+.tab {
+	flex: 1;
+	font-size: 14px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	line-height: 25px;
+}
+.tabs .tab.active {
+	color: #fff;
+	font-weight: bold;
+}
+.tab .iconfont {
+	font-size: 20px;
+}

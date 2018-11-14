@@ -1,0 +1,12 @@
+.home-img {
+    width: 150px;
+    margin-right: 10px;
+}
+.home-img img {
+    width: 100%;
+}
+.book-item {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}

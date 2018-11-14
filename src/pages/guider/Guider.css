@@ -1,0 +1,28 @@
+#guider{
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.guide-swiper {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.swiper-slide img {
+	width: 100%;
+	height: 100%;
+}
+.enter-btn {
+	position: absolute;
+	bottom: 98px;
+	left: 100px;
+	width: 161px;
+	height: 63px;
+	background: pink;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 63px;
+	font-size: 20px;
+}
