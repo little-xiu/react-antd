@@ -1,18 +1,19 @@
+/* eslint-disable */
 import React, {Component} from 'react'
-import Header from "../../components/header.jsx"
+// import Header from "../../components/header.jsx"
 // import CandProceBar from '../../components/CandProceBar.jsx';
-import FormItemPack from '../../components/FormItemPack';
-import {Form, DatePicker, Pagination, Table, Divider, Tag, Modal, Button, Radio } from 'antd';
+// import FormItemPack from '../../components/FormItemPack';
+import {Form, DatePicker, Table, Divider, Tag, Modal, Button, Radio } from 'antd';
 const RadioGroup = Radio.Group;
-function onChange(pageNumber, pageSize) {
-  console.log('Page: ', pageNumber, pageSize);
-}
+// function onChange(pageNumber, pageSize) {
+//   console.log('Page: ', pageNumber, pageSize);
+// }
 
 const columns = [{
   title: 'Name',
   dataIndex: 'name',
   key: 'name',
-  render: text => <a href="javascript:;">{text}</a>,
+  render: text => <a>{text}</a>,
 }, {
   title: 'Age',
   dataIndex: 'age',
@@ -74,6 +75,12 @@ const rowSelection = {
   const { MonthPicker, RangePicker } = DatePicker;
   const confirm = Modal.confirm;
 class More extends Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
     showConfirm = () => {
         confirm({
             title: 'Do you want to delete these items?',

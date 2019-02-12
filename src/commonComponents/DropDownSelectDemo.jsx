@@ -42,7 +42,7 @@ class InterviewArrangeInfo extends Component {
     }
     render () {
         const { form, interArrangeInfo, disabled, } = this.props;
-        const { getFieldDecorator } = form;
+        // const { getFieldDecorator } = form;
         const { dataList, visiable } = this.state;
         return (
           <div id="interview_div_info">
@@ -61,7 +61,7 @@ class InterviewArrangeInfo extends Component {
                       maxLength={20}
                       onChange={this.handleChange}
                       required
-                      defaultValue={interArrangeInfo && interArrangeInfo.interviewCount && }
+                      defaultValue={interArrangeInfo && interArrangeInfo.interviewCount}
                     />
                     {
                       visiable && <div className="drop_down_child">
@@ -131,3 +131,4 @@ class InterviewArrangeInfo extends Component {
         )
     }
 }
+export default InterviewArrangeInfo;

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Redirect, Switch} from "react-router-dom";
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import * as global from './main/actions/global';
 import './App.css';
 import Home from "./pages/home/Home.jsx";
 import Mine from "./pages/mine/Mine.jsx";
@@ -10,6 +13,8 @@ import Cart from "./pages/cart/Cart.jsx";
 import Tabs from "./components/Tabs.jsx";
 import BookDetail from "./pages/common/BookDetail.jsx";
 import CinemaDetail from "./pages/category/cinemaDetail.jsx";
+import Main from './main/main.jsx';
+
 class App extends Component {
   constructor () {
     super();
@@ -26,9 +31,9 @@ class App extends Component {
         <div className="App">
           {/*根页面路由*/}
           <Switch>
-            <Route path="/" exact render={()=>{
+            {/* <Route path="/" exact render={()=>{
               return <Redirect to="/home"/>
-            }}/>
+            }}/> */}
             <Route path="/home" exact component={Home}/>
             <Route component={BookDetail} path="/home/detail/"/>           
             <Route path="/Mine" component={Mine}/>
@@ -36,9 +41,11 @@ class App extends Component {
             <Route path="/Category" exact component={Category}/>
             <Route path="/Category/detail/:id" component={CinemaDetail}/>
             <Route path="/Cart" component={Cart}/>
-            <Route render={()=>{
-              return <Redirect to="/home"/>;
-            }}/>
+            <Route path="/" component={Main} />
+            <Redirect to="/" />
+            {/* <Route render={()=>{
+              return <Redirect to="/"/>;
+            }}/> */}
           </Switch>
 
         {/*footer部分*/}
@@ -58,5 +65,11 @@ class App extends Component {
     localStorage.setItem("loaded",true);
   }
 }
-
-export default App;
+const mapStateToProps = state => ({
+  globalParam: state.global.globalParam,
+  mainLayoutRef: state.global.saveMainLayoutRef,
+});
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(global, dispatch),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(App);

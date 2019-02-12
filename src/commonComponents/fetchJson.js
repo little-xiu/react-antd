@@ -1,3 +1,4 @@
+/* eslint-disable */
 import 'whatwg-fetch';
 import {Modal, message} from 'antd';
 import Config from '../api/constants';

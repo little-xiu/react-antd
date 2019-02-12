@@ -15,7 +15,7 @@ function cartReducer(state = preloadState, action){
         });
         if(index >= 0) {//存在
 			let arr = state.map((item, j)=>{
-				if(index == j){
+				if(index === j){
 					item.count ++;
 				}
 				return item;
@@ -24,7 +24,7 @@ function cartReducer(state = preloadState, action){
 			return arr;
         } 
         else {//购物车不存在该商品时
-            let data = [...state,{...action.value,count: 1}];
+          let data = [ ...state, ...action.value, { count: 1 }];
         	localStorage.setItem("cart",JSON.stringify(data));//sessionStorage的用法一样
           return data;
         }

@@ -68,6 +68,7 @@ class CheckInterviewDetailComp extends Component {
                     break;
                 }
                 default:
+                    break;
                 }
                 return {
                     ...item,

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import 'whatwg-fetch'
 import API from '../api'
 //热映数据请求

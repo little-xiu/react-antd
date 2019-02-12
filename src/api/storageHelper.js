@@ -1,3 +1,4 @@
+/* eslint-disable */
 const UMID = 'UMID';
 const DYNAMIC_COL = 'DYNAMIC_COL';
 const INTERVIEW_DATA = 'INTERVIEW_DATA';

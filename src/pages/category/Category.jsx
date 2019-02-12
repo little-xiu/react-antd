@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {Component} from 'react'
 import Header from "../../components/header.jsx"
 import Content from "../../components/content.jsx";

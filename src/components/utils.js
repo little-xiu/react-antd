@@ -1,12 +1,12 @@
+/* eslint-disable */
 import _ from 'lodash';
 import moment from 'moment';
 import URL from 'url';
 import querystring from 'querystring';
-import { formatUrl, } from '@common/utils/fetchJson.js';
-import constants from '../constants';
+// import { formatUrl, } from '@common/utils/fetchJson.js';
 
 // 是否开发模式下
-const isDevMode = process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'dev';
+// const isDevMode = process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'dev';
 export default {
     //获取页面参数，如http://test.html?a=1&b=2  则返回： { a: 1, b: 2 }
     getUrlParams(url) {//使用： const urlParams = utils.getUrlParams(this.props.location.search);
@@ -203,23 +203,6 @@ export default {
             window.open('', '_self');
             window.close();
         }
-    },
-    //数组去重
-    getDistinctArray(arr, key) {
-        const hash = {};
-        let newArr = [];
-        if (key) {
-            newArr = arr && arr.reduce((item, next) => {
-                hash[next.key] ? '' : hash[next.key] = true && item.push(next);
-                return item;
-            }, []);
-        } else {
-            newArr = arr && arr.reduce((item, next) => {
-                hash[next] ? '' : hash[next] = true && item.push(next);
-                return item;
-            }, []);
-        }
-        return newArr;
     },
     downloadImg(imgSrc, imgName = '二维码') {
         if (this.isIEBr() === '1') {
